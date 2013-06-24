@@ -1,0 +1,33 @@
+<%= form_for(@spanish_vocab) do |f| %>
+  <% if @spanish_vocab.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@spanish_vocab.errors.count, "error") %> prohibited this spanish_vocab from being saved:</h2>
+
+      <ul>
+      <% @spanish_vocab.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :wordEnglish %><br />
+    <%= f.text_field :wordEnglish %>
+  </div>
+  <div class="field">
+    <%= f.label :wordSpanish %><br />
+    <%= f.text_field :wordSpanish %>
+  </div>
+  <div class="field">
+    <%= f.label :example %><br />
+    <%= f.text_field :example %>
+  </div>
+  <div class="field">
+    <%= f.label :understandingRanking %><br />
+    <%= f.number_field :understandingRanking %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

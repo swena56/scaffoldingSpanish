@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  wordEnglish: MyString
+  wordSpanish: MyString
+  example: MyString
+  understandingRanking: 1
+
+two:
+  wordEnglish: MyString
+  wordSpanish: MyString
+  example: MyString
+  understandingRanking: 1

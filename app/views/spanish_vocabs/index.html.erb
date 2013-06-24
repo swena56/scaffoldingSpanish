@@ -1,0 +1,29 @@
+<h1>Listing spanish_vocabs</h1>
+
+<table>
+  <tr>
+    <th>Wordenglish</th>
+    <th>Wordspanish</th>
+    <th>Example</th>
+    <th>Understandingranking</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @spanish_vocabs.each do |spanish_vocab| %>
+  <tr>
+    <td><%= spanish_vocab.wordEnglish %></td>
+    <td><%= spanish_vocab.wordSpanish %></td>
+    <td><%= spanish_vocab.example %></td>
+    <td><%= spanish_vocab.understandingRanking %></td>
+    <td><%= link_to 'Show', spanish_vocab %></td>
+    <td><%= link_to 'Edit', edit_spanish_vocab_path(spanish_vocab) %></td>
+    <td><%= link_to 'Destroy', spanish_vocab, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Spanish vocab', new_spanish_vocab_path %>

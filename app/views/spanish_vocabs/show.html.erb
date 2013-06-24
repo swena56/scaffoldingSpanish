@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Wordenglish:</b>
+  <%= @spanish_vocab.wordEnglish %>
+</p>
+
+<p>
+  <b>Wordspanish:</b>
+  <%= @spanish_vocab.wordSpanish %>
+</p>
+
+<p>
+  <b>Example:</b>
+  <%= @spanish_vocab.example %>
+</p>
+
+<p>
+  <b>Understandingranking:</b>
+  <%= @spanish_vocab.understandingRanking %>
+</p>
+
+
+<%= link_to 'Edit', edit_spanish_vocab_path(@spanish_vocab) %> |
+<%= link_to 'Back', spanish_vocabs_path %>
